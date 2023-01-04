@@ -29,7 +29,7 @@ body {
   border: 1px solid transparent;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(133, 255, 241), 8px 6px 10px rgb(121, 209, 107),
-    -8px -5px 10px rgb(255, 0, 255);
+    -8px -5px 10px rgb(255, 0, 255), 10px -10px 5px #05f;
 }
 .header .container h1 {
   color: rgb(0, 209, 185);
