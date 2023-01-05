@@ -15,6 +15,9 @@
   background-repeat: no-repeat;
   background-position: right bottom, left;
 }
+button:hover {
+  cursor: pointer;
+}
 /* navbar styles */
 .navbar {
   display: flex;
