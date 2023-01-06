@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* styling header or hero section */
+
+header {
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/banner/banner3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+/* making a gap between text and side wall */
+.headerContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+/* set the text in right side */
+.headerContainer .headerContent {
+  width: 45%;
+  text-align: right;
+}
+.headerContent h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+.headerContent p {
+  color: #fff;
+  margin: 30px 0;
+}
+/* I will use this style for others button */
+.button {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  color: #005fac;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+/* end of header */
+/* failures year section */
+.container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.failures {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 100px 0 50px 0;
+}
+.failures .leftImage {
+  width: 50%;
+}
+.failures .leftImage img {
+  width: 100%;
+}
+.failures .rightContent {
+  width: 50%;
+}
+.failures .rightContent h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.failures .rightContent p {
+  margin: 30px 0;
+  color: rgb(29, 29, 29);
+}
+.failures .rightContent ul li {
+  list-style: none;
+  margin: 10px 0;
+  color: rgb(29, 29, 29);
+}
+.fa-check {
+  color: lightgreen;
+  margin-right: 10px;
+}
+/* end of failures */
+
+/* What i want to do */
+/* plans section */
+.plansection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.plans {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 50px 0;
+}
+.plans .plan {
+  text-align: center;
+}
+.plans .plan h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.plans .plan p {
+  color: rgb(82, 82, 82);
+  font-size: 20px;
+  font-weight: 600;
+}
+/* mind set section */
+.mindset {
+  width: 100%;
+  margin: 100px 0;
+  background-image: url(../images/watch.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.mindset .gradient {
+  width: 100%;
+  background: linear-gradient(90deg, #005fac, transparent);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.mindset .gradient .content {
+  width: 90%;
+  padding: 50px 0;
+  color: #fff;
+}
+.mindset .gradient .content h1 {
+  width: 80%;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+/* end of mindset */
+/* blog section style */
+.blogs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.blogs .blog {
+  width: 350px;
+  height: 550px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 6px;
+}
+.blogs .blog > div,
+.blogs .blog > h1 {
+  padding: 15px;
+}
+.blogs .blog > button {
+  margin: 20px 0 20px 15px;
+  padding: 10px 15px;
+  color: #005fac;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.blogs .blog img {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.moreBtn {
+  width: 100%;
+  border-radius: 3px;
+  margin: 20px 0;
+  background-color: black !important;
+  letter-spacing: 5px;
+}
+/* end of blog section */
+/* footer section start */
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.footerContainer{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 100px 0;
+}
+.footerContainer .footerLeftContent{
+    width: 70%;
+}
+.footerContainer .footerLeftContent p{
+    color: rgb(237, 237, 237);
+    margin: 30px 0;
+}
+.footerContainer .footerLeftContent ul{
+    display: flex;
+}
+.footerContainer .footerLeftContent ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+.footerContainer .footerRightContent{
+    width: 30%;
+}
+.footerContainer .footerRightContent input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: 20px 0;
+    color: #fff;
+    background-color: transparent;
+}
+.blueBtn{
+    color: #fff;
+    background-color: #005fac;
+}

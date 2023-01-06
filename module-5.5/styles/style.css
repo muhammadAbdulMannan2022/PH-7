@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 600px;
+  background: url(../images/donation2.jpg);
+}
+.header .overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.117),
+    rgba(0, 0, 0, 0.574),
+    black
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.header .overlay .container {
+  text-align: center;
+  width: 60%;
+}
+.header .overlay .container h1 {
+  font-size: 45px;
+  font-weight: 900;
+  text-shadow: 0px 0px 5px black;
+}
+.header .overlay .container p {
+  color: rgba(255, 255, 255, 0.839);
+  margin: 20px 0;
+}
+.donateBtn {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  background: rgb(255, 62, 95);
+}
+/* main styleing */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+main .container > * {
+  text-align: center;
+}
+main .container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .container p {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(143, 143, 143);
+}
+main .container .ammounts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  gap: 10px;
+  margin: 50px 0;
+}
+main .container .ammounts .ammount {
+  padding: 20px 10px;
+  background: rgba(211, 211, 211, 0.775);
+  border-radius: 10px;
+  color: rgb(125, 125, 125);
+  transition: color 0.5s ease;
+}
+main .container .ammounts .ammount:hover {
+  color: rgb(255, 62, 95);
+  border: 1px solid rgb(255, 62, 95);
+  background: rgb(255, 194, 204);
+}
+main .container .castomAmount {
+  width: 100%;
+  padding: 5px 0;
+}
+main .container hr {
+  width: 100%;
+  color: rgb(143, 143, 143);
+  margin-bottom: 40px;
+}
+main .container .castomAmount input[type="number"]::-webkit-outer-spin-button,
+main .container .castomAmount input[type="number"]::-webkit-inner-spin-button,
+main .container input[type="number"] {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* our donate plan */
+.ourDonatePlan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 40px 0;
+}
+.ourDonatePlan .donatePlans {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  gap: 5px;
+}
+.ourDonatePlan > p {
+  max-width: 60%;
+}
+.ourDonatePlan .donatePlans > div {
+  max-width: 300px;
+  padding: 30px 10px;
+  text-align: start;
+  border-radius: 5px;
+}
+.ourDonatePlan .donatePlans > div h2 {
+  margin: 10px 0 !important;
+}
+.donatePlans .donatePlan1 {
+  background: rgb(204, 236, 255);
+}
+.donatePlans .donatePlan2 {
+  background: rgb(255, 205, 214);
+}
+.donatePlans .donatePlan3 {
+  background: lightyellow;
+}
+/* some thing about people */
+.someOfThem {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.someOfThem .left {
+  flex: 1;
+  text-align: start;
+}
+.someOfThem .left button {
+  margin: 20px 0 10px 0;
+}
+.someOfThem .right {
+  flex: 1;
+}
+.someOfThem .right img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.getUpdates {
+  width: 80%;
+}
+.getUpdates .emaileBox {
+  width: 100%;
+  background: lightyellow;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+.emaileBox .emailAndBtn {
+  width: 60%;
+  border: 1px solid rgb(192, 192, 192);
+}
+.emaileBox .emailAndBtn input {
+  height: 100%;
+  width: 73%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+.emaileBox .emailAndBtn button {
+  width: 25%;
+  margin: 0;
+  padding: 5px;
+  border: none;
+  color: white;
+  background: rgb(255, 62, 95);
+}
+/* footer */
+footer {
+  background: rgb(0, 0, 24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+footer h1 {
+  color: rgb(255, 62, 95);
+}
