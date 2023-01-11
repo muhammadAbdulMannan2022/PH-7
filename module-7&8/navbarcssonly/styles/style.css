@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #fff;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(120deg, rgb(253, 247, 88), rgb(255, 173, 173));
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+header,
+nav {
+  width: 100%;
+  height: 50px;
+  background: rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .logo {
+  line-height: 50px;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+.container ul {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+.container ul li {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  list-style: none;
+  transition: background 0.5s;
+}
+.container ul li:hover {
+  cursor: pointer;
+  background: rgba(205, 205, 205, 0.366);
+}
+.container ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+#toggle {
+  display: none;
+}
+label[for="toggle"] {
+  display: none;
+}
+.burger {
+  height: 30px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger div {
+  width: 100%;
+  height: 5px;
+  background: var(--text-color);
+  transition: all 0.5s;
+}
+@media screen and (max-width: 834px) {
+  label[for="toggle"] {
+    display: block;
+  }
+  .container {
+    align-items: center;
+  }
+  .container ul {
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    height: calc(100vh - 50px);
+    background: black;
+    top: 50px;
+    right: 0;
+    justify-content: space-around;
+    transform: translateX(100%);
+  }
+  #toggle:checked + .container ul {
+    transform: translateX(0%);
+  }
+  #toggle:checked + .container .burger .line1 {
+    transform: rotate(-45deg);
+    transform-origin: right;
+  }
+  #toggle:checked + .container .burger .line2 {
+    visibility: hidden;
+  }
+  #toggle:checked + .container .burger .line3 {
+    transform: rotate(45deg);
+    transform-origin: right;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container ul {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .container ul {
+    width: 100%;
+  }
+}
