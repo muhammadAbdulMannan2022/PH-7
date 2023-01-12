@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: rgb(0, 0, 44);
+  --secend-bg: rgb(255, 196, 0);
+  --text-color: #fff;
+}
+body {
+  width: 100%;
+  background: url(../images/body_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+nav .container .logo > img {
+  width: 150px;
+  cursor: pointer;
+}
+nav .container :is(.social, .burger) {
+  display: flex;
+}
+:is(.social, .burger) :is(li) {
+  list-style: none;
+  padding: 10px;
+}
+:is(.social, .burger) :is(li) :is(a) {
+  color: var(--text-color);
+  font-size: 25px;
+}
+.heroSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+.heroSection .container > div {
+  width: 100%;
+  flex: 1;
+}
+.heroSection .container .heroLeft img {
+  width: 100%;
+}
+.heroSection .container .heroRight h1 {
+  color: var(--text-color);
+  margin: 10px 10px 10px 0;
+  font-size: 55px;
+}
+.heroSection .container .heroRight p {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.heroSection .heroRight .buttons {
+  display: flex;
+  gap: 20px;
+}
+.heroSection .heroRight .buttons .btn {
+  font-size: 20px;
+  padding: 20px 30px;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  background: transparent;
+  transition: background 0.5s;
+}
+.heroSection .heroRight .buttons .btn:hover {
+  cursor: pointer;
+  background: var(--secend-bg);
+  border: 1px solid var(--secend-bg);
+}
+.heroSection .slideBtn button {
+  padding: 15px 20px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  background: transparent;
+  margin: 30px 10px;
+  cursor: pointer;
+}
+.fa-less-than,
+.fa-greater-than {
+  font-size: 30px;
+  font-weight: 100;
+  color: gray;
+  transition: color 0.5s;
+}
+
+.heroSection .slideBtn button:hover .fa-less-than,
+.heroSection .slideBtn button:hover .fa-greater-than {
+  color: var(--text-color);
+}
+i {
+  transition: color 0.5s;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .container {
+  flex-direction: column;
+}
+.wallet {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+.wallet .card {
+  text-align: center;
+  background: var(--text-color);
+  padding: 20px;
+  transition: all 0.5s;
+}
+.wallet .card i {
+  font-size: 30px;
+}
+.wallet .card h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.wallet .card:hover {
+  color: var(--text-color);
+  background: var(--secend-bg);
+}
+.about {
+  border: 1px dashed var(--text-color);
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+}
+.about > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.about .aboutLeft h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+.about .aboutLeft p {
+  color: var(--text-color);
+  margin: 20px 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+.about .aboutLeft .btn {
+  font-size: 20px;
+  padding: 20px 30px;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  background: transparent;
+  transition: background 0.5s;
+}
+.about .aboutLeft .btn:hover {
+  cursor: pointer;
+  background: var(--secend-bg);
+  border: 1px solid var(--secend-bg);
+}
+.about .aboutRight img {
+  width: 100%;
+}
+@media screen and (min-width: 1500px) {
+  .wallet .card {
+    height: 300px;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1064px) {
+  .heroSection .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wallet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .social {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 50px;
+    background: rgba(0, 0, 44, 0.894);
+    transition: background 1s;
+  }
+  .social:hover {
+    background: var(--bg-color);
+  }
+  i:hover {
+    color: var(--secend-bg);
+  }
+  .heroSection .heroRight .buttons .btn {
+    padding: 10px 20px;
+  }
+  .heroSection .slideBtn button {
+    padding: 12px 16px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .wallet {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
