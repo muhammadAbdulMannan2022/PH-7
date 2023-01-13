@@ -81,6 +81,7 @@ i {
 .hero-section .hero-right {
   background-image: url(../images/Circle\ design.svg);
   background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-section .hero-left {
   color: var(--text-color);
