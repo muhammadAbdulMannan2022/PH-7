@@ -79,6 +79,7 @@ i {
   flex: 1;
 }
 .hero-section .hero-right {
+  text-align: center;
   background-image: url(../images/Circle\ design.svg);
   background-position: center;
   background-repeat: no-repeat;
