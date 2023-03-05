@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>api test</title>
+  </head>
+  <body>
+    <p>Select a radio button and click on Submit.</p>
+
+    image of:
+    <input type="radio" name="gender" value="male" />only male
+    <input type="radio" name="gender" value="female" />only female
+    <input type="radio" name="gender" value="Others" /> both of male and female
+
+    <br />
+
+    <button type="button" onclick="displayRadioValue()">Submit</button>
+
+    <br />
+
+    <div id="result"></div>
+    <div class="container">
+      <div id="maile" style="display: flex; flex-wrap: wrap"></div>
+      <div id="femaile" style="display: flex; flex-wrap: wrap"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

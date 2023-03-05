@@ -1,0 +1,15 @@
+{
+  "name": "loops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loops.js",
+  "scripts": {
+    "start": "nodemon loops.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
